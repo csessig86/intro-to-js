@@ -1,5 +1,5 @@
 # Introduction to Javascript
-An introduction to Javascript, the greatest programming language ever
+This is the code behind my NICAR 2017 session on learning Javascript.
 
 ####Background
 * Javascript is one of the three core technologies of the World Wide Web, along with HTML and CSS.
