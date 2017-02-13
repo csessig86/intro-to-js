@@ -28,7 +28,7 @@ Math.round(10.7);   // returns 11
 Math.max(0, 150, 30, 20, -8, -200); // returns 150
 Math.floor(4.7);    // returns 4
 
-new Date // This equals today's date
+new Date() // This equals today's date
 ```
 
 ####Comments, console.log
@@ -55,6 +55,7 @@ string += ', the best programming language ever' // This will return 'All hail J
 ```
 
 ####Data type: Arrays
+You can group numbers and strings into one variable using arrays.
 ```javascript
 var array_one = [10, 15, 20] // Arrays are groups of numbers
 
@@ -78,6 +79,7 @@ array_three[1] // returns "Sign o' the Times"
 ```
 
 ####Data type: Objects
+You can also store data using named attributes.
 ```javascript
 var object_one = {
   "artist": "Prince",
@@ -91,6 +93,7 @@ object_one["stars"] // returns 5
 ```
 
 ####Objects inside an array
+You can also store objects inside arrays. You can store as many as you want.
 ```javascript
 var object_two = [{
   "artist": "Prince",
@@ -107,6 +110,7 @@ object_two[1]["artist"] // returns "Funkadelic"
 ```
 
 ####If, else statement
+This will run code based on a condition or conditions. Code that doesn't fit this condition or conditions will be ignored.
 ```javascript
 var number = 50;
 
@@ -118,6 +122,7 @@ if (number === 50) {
 ```
 
 ####Functions
+You can also encapsulate code inside a function
 ```javascript
 function ourFirst() {
   // Code goes in here
@@ -132,6 +137,132 @@ function ourSecond() {
   number_two + 50 // returns 150
 }
 
-
 ourSecond();
 ```
+
+####If, else and functions
+Like all things in Javascript, you can combine different parts. Below, we combine if, else functions and functions.
+```javascript
+var number = 50;
+
+function setTo150() {
+  number = 150 // This will be called and number will be set to 150
+}
+
+function setTo250() {
+  number = 250
+}
+
+if (number === 50) {
+  setTo150() // This code WILL run
+} else {
+  setTo250() // This code WILL NOT not
+}
+```
+
+####For loops
+If we want a piece a code to run many times, we can call a for loop.
+```javascript
+for (var num = 0; num < 10; num++) {
+  // The first time through num equals 0.
+  // The second time it equals 1, etc. until we get to 9.
+  // Which will be the last iteration of this for loop
+  num
+}
+
+var number = 50;
+
+function plusFive(num) {
+  number += 5
+}
+
+for (var num = 0; num < 10; num++) {
+  plusFive()
+}
+
+// After the for loop is done
+// number will equal 100
+// Because 5 was added to its initial value of 50 ten times
+// Because the for loop was called ten times
+number
+
+var final_number = 50;
+
+// Add the value of the for loop's num
+// To final_number
+function plusNum(num) {
+  final_number += num
+}
+
+for (var num = 0; num < 10; num++) {
+  // Pass the value of num (0, 1, 2, 3, etc.)
+  // To our function
+  plusNum(num)
+}
+
+final_number // returns 95
+```
+
+####Global v. local variables
+Variables declared outside of a function are considered "global" and can be used anywhere in the file. Variables declared inside a function are considered "local" and can only be used inside the function.
+```javascript
+// This is a global variable
+var number = 100;
+
+function ourThird() {
+  var number = 500 // Using var in front of number creates a local variable
+  number // So this now returns 500
+}
+
+ourThird()
+
+number // This calls the global variable and it’s still 100.
+number = 500 // Now the global variable is set to 500
+```
+
+####Returing functions
+Sometimes it's easier if a function returns a value. This means every time you call that function, that value will be returned.
+```javascript
+var number = 1005;
+
+// Returns number variable minus that is passed as a parameter
+function ourFifth(minus_number) {
+    return number - minus_number
+}
+
+ourFifth(1000) // returns 5
+
+// Note: Without the return statement within the function
+// The following would error
+ourFifth(1000) + 100 // returns 105
+
+// Add commas to numbers over 1000
+function commaSeparateNumber(val){
+  while (/(\d+)(\d{3})/.test(val.toString())){
+    val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+  }
+  
+  return val;
+}
+
+commaSeparateNumber(1000000) // Returns 1,000,000
+```
+
+####DOM manipulation
+jQuery is where it’s at. It was released in 2006 to make it easier to use CSS selectors to manipulate elements on the DOM.
+```javascript
+// Change the color of the header to red
+$('h1').css({
+    'color': 'red'
+});
+
+// Change the text of the header to "Your new header"
+$('h1').text('Your new header')
+
+// This changes the text and adds a class
+$('h1').text('Your new header').addClass('blue');
+```
+
+####More beginner libraries
+[Underscore](http://underscorejs.org/): Better ways of manipulating objects, arrays
+[Moment](http://momentjs.com/): Handles dates better than Javascript’s default functions
