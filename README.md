@@ -17,6 +17,7 @@ An introduction to Javascript, the greatest programming language ever
 * SO MANY things!
 
 ####Math, Dates
+The most basic thing you can do in Javascript is math. You can also get the current date and time easily.
 ```javascript
 5 + 10  // returns 15
 10 / 5  // returns 2
@@ -41,6 +42,7 @@ console.log(5 + 10);
 ```
 
 ####Variables
+Variables allow you store pieces of information to use later in your Javascript file.
 ```javascript
 var number = 5 + 10; // This is a number
 var string = 'All hail Javascript' // This is a string
@@ -264,5 +266,5 @@ $('h1').text('Your new header').addClass('blue');
 ```
 
 ####More beginner libraries
-[Underscore](http://underscorejs.org/): Better ways of manipulating objects, arrays
-[Moment](http://momentjs.com/): Handles dates better than Javascript’s default functions
+* [Underscore](http://underscorejs.org/): Better ways of manipulating objects, arrays
+* [Moment](http://momentjs.com/): Handles dates better than Javascript’s default functions
