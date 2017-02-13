@@ -8,8 +8,12 @@ An introduction to Javascript, the greatest programming language ever
 * HTML = Elements the page
 * Javascript = How those elements on the page
 
-####Browsers
+####Browser dependency
 * For the most part, Javascript requires browsers to operate.
 * Browsers support Javascript differently, although it’s gotten better.
+
+####What can you do with Javascript?
+* SO MANY things!
+
 
 
