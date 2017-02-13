@@ -33,6 +33,7 @@ new Date() // This equals today's date
 ```
 
 ####Comments, console.log
+Comments allow you to write notes for your future self so you know what certain pieces of code are supposed to do. Console.log statements are great for debugging code. Whatever is inside of the console.log statement will be shown in the [Google Chrome web inspector](https://developer.chrome.com/devtools)
 ```javascript
 // Example of a comment
 5 + 10
