@@ -16,7 +16,7 @@ An introduction to Javascript, the greatest programming language ever
 ####What can you do with Javascript?
 * SO MANY things!
 
-####Math, Dates
+####1. Math, Dates
 The most basic thing you can do in Javascript is math. You can also get the current date and time easily.
 ```javascript
 5 + 10  // returns 15
@@ -32,7 +32,7 @@ Math.floor(4.7);    // returns 4
 new Date() // This equals today's date
 ```
 
-####Comments, console.log
+####2. Comments, console.log
 Comments allow you to write notes for your future self so you know what certain pieces of code are supposed to do. Console.log statements are great for debugging code. Whatever is inside of the console.log statement will be shown in the [Google Chrome web inspector](https://developer.chrome.com/devtools)
 ```javascript
 // Example of a comment
@@ -42,7 +42,7 @@ Comments allow you to write notes for your future self so you know what certain 
 console.log(5 + 10);
 ```
 
-####Variables
+####3. Variables
 Variables allow you store pieces of information to use later in your Javascript file.
 ```javascript
 var number = 5 + 10; // This is a number
@@ -57,7 +57,7 @@ number // returns 30
 string += ', the best programming language ever' // This will return 'All hail Javascript, the best programming language ever'
 ```
 
-####Data type: Arrays
+####4. Data type: Arrays
 You can group numbers and strings into one variable using arrays.
 ```javascript
 var array_one = [10, 15, 20] // Arrays are groups of numbers
@@ -81,7 +81,7 @@ var array_three = ["Prince", "Sign o' the Times", 5]
 array_three[1] // returns "Sign o' the Times"
 ```
 
-####Data type: Objects
+####5. Data type: Objects
 You can also store data using named attributes.
 ```javascript
 var object_one = {
@@ -95,7 +95,7 @@ object_one["album"] // returns "Sign o' the Times"
 object_one["stars"] // returns 5
 ```
 
-####Objects inside an array
+####6. Objects inside an array
 You can also store objects inside arrays. You can store as many as you want.
 ```javascript
 var object_two = [{
@@ -112,7 +112,7 @@ object_two[0]["artist"] // returns "Prince"
 object_two[1]["artist"] // returns "Funkadelic"
 ```
 
-####If, else statement
+####7. If, else statement
 This will run code based on a condition or conditions. Code that doesn't fit this condition or conditions will be ignored.
 ```javascript
 var number = 50;
@@ -124,7 +124,7 @@ if (number === 50) {
 }
 ```
 
-####Functions
+####8. Functions
 You can also encapsulate code inside a function
 ```javascript
 function ourFirst() {
@@ -143,8 +143,8 @@ function ourSecond() {
 ourSecond();
 ```
 
-####If, else and functions
-Like all things in Javascript, you can combine different parts. Below, we combine if, else functions and functions.
+####9. If, else statements and functions
+Like most things in Javascript, you can combine different parts. Below, we combine if, else functions and functions.
 ```javascript
 var number = 50;
 
@@ -163,7 +163,7 @@ if (number === 50) {
 }
 ```
 
-####For loops
+####10. For loops
 If we want a piece a code to run many times, we can call a for loop.
 ```javascript
 for (var num = 0; num < 10; num++) {
@@ -206,7 +206,7 @@ for (var num = 0; num < 10; num++) {
 final_number // returns 95
 ```
 
-####Global v. local variables
+####11. Global v. local variables
 Variables declared outside of a function are considered "global" and can be used anywhere in the file. Variables declared inside a function are considered "local" and can only be used inside the function.
 ```javascript
 // This is a global variable
@@ -223,7 +223,7 @@ number // This calls the global variable and it’s still 100.
 number = 500 // Now the global variable is set to 500
 ```
 
-####Returing functions
+####12. Returing functions
 Sometimes it's easier if a function returns a value. This means every time you call that function, that value will be returned.
 ```javascript
 var number = 1005;
@@ -251,7 +251,7 @@ function commaSeparateNumber(val){
 commaSeparateNumber(1000000) // Returns 1,000,000
 ```
 
-####DOM manipulation
+####13. DOM manipulation
 jQuery is where it’s at. It was released in 2006 to make it easier to use CSS selectors to manipulate elements on the DOM.
 ```javascript
 // Change the color of the header to red
