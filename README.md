@@ -16,8 +16,13 @@ This is the code behind my NICAR 2017 session on learning Javascript.
 ####What can you do with Javascript?
 * SO MANY things!
 
+####Pre: The set up
+* This repo has two directories:
+  * 01-base contains the empty files you will need to get started. Nothing has been written yet.
+  * 02-final is a collection of scripts files containing the code highlighted in this walkthrough.
+
 ####1. Math, Dates
-The most basic thing you can do in Javascript is math. You can also get the current date and time easily.
+* The most basic thing you can do in Javascript is math. You can also get the current date and time easily.
 ```javascript
 5 + 10  // returns 15
 10 / 5  // returns 2
@@ -33,7 +38,8 @@ new Date() // This equals today's date
 ```
 
 ####2. Comments, console.log
-Comments allow you to write notes for your future self so you know what certain pieces of code are supposed to do. Console.log statements are great for debugging code. Whatever is inside of the console.log statement will be shown in the [Google Chrome web inspector](https://developer.chrome.com/devtools)
+* Comments allow you to write notes for your future self so you know what certain pieces of code are supposed to do.
+* Console.log statements are great for debugging code. Whatever is inside of the console.log statement will be shown in the [Google Chrome web inspector](https://developer.chrome.com/devtools)
 ```javascript
 // Example of a comment
 5 + 10
@@ -43,7 +49,7 @@ console.log(5 + 10);
 ```
 
 ####3. Variables
-Variables allow you store pieces of information to use later in your Javascript file.
+* Variables allow you store pieces of information to use later in your Javascript file.
 ```javascript
 var number = 5 + 10; // This is a number
 var string = 'All hail Javascript' // This is a string
@@ -58,7 +64,7 @@ string += ', the best programming language ever' // This will return 'All hail J
 ```
 
 ####4. Data type: Arrays
-You can group numbers and strings into one variable using arrays.
+* You can group numbers and strings into one variable using arrays.
 ```javascript
 var array_one = [10, 15, 20] // Arrays are groups of numbers
 
@@ -82,7 +88,7 @@ array_three[1] // returns "Sign o' the Times"
 ```
 
 ####5. Data type: Objects
-You can also store data using named attributes.
+* You can also store data using named attributes.
 ```javascript
 var object_one = {
   "artist": "Prince",
@@ -96,7 +102,7 @@ object_one["stars"] // returns 5
 ```
 
 ####6. Objects inside an array
-You can also store objects inside arrays. You can store as many as you want.
+* You can also store objects inside arrays. You can store as many as you want.
 ```javascript
 var object_two = [{
   "artist": "Prince",
@@ -113,7 +119,7 @@ object_two[1]["artist"] // returns "Funkadelic"
 ```
 
 ####7. If, else statement
-This will run code based on a condition or conditions. Code that doesn't fit this condition or conditions will be ignored.
+* This will run code based on a condition or conditions. Code that doesn't fit this condition or conditions will be ignored.
 ```javascript
 var number = 50;
 
@@ -125,7 +131,7 @@ if (number === 50) {
 ```
 
 ####8. Functions
-You can also encapsulate code inside a function
+* You can also encapsulate code inside a function.
 ```javascript
 function ourFirst() {
   // Code goes in here
@@ -144,7 +150,7 @@ ourSecond();
 ```
 
 ####9. If, else statements and functions
-Like most things in Javascript, you can combine different parts. Below, we combine if, else functions and functions.
+* Like most things in Javascript, you can combine different parts. Below, we combine if, else statements and functions. Also, you can name your functions what you want but it's best to describe what is happening inside the function.
 ```javascript
 var number = 50;
 
@@ -164,7 +170,7 @@ if (number === 50) {
 ```
 
 ####10. For loops
-If we want a piece a code to run many times, we can call a for loop.
+* If we want a piece a code to run many times, we can call a for loop.
 ```javascript
 for (var num = 0; num < 10; num++) {
   // The first time through num equals 0.
@@ -172,7 +178,11 @@ for (var num = 0; num < 10; num++) {
   // Which will be the last iteration of this for loop
   num
 }
+```
 
+####11. For loops, functions and variables
+* We can also create a for loop to call a function every time it loops through. This looks like so:
+```javascript
 var number = 50;
 
 function plusFive(num) {
@@ -206,8 +216,8 @@ for (var num = 0; num < 10; num++) {
 final_number // returns 95
 ```
 
-####11. Global v. local variables
-Variables declared outside of a function are considered "global" and can be used anywhere in the file. Variables declared inside a function are considered "local" and can only be used inside the function.
+####12. Global v. local variables
+* Variables declared outside of a function are considered "global" and can be used anywhere in the file. Variables declared inside a function are considered "local" and can only be used inside the function.
 ```javascript
 // This is a global variable
 var number = 100;
@@ -223,8 +233,8 @@ number // This calls the global variable and it’s still 100.
 number = 500 // Now the global variable is set to 500
 ```
 
-####12. Returing functions
-Sometimes it's easier if a function returns a value. This means every time you call that function, that value will be returned.
+####13. Returing functions
+* Sometimes it's easier if a function returns a value. This means every time you call that function, that value will be returned.
 ```javascript
 var number = 1005;
 
@@ -251,8 +261,8 @@ function commaSeparateNumber(val){
 commaSeparateNumber(1000000) // Returns 1,000,000
 ```
 
-####13. DOM manipulation
-jQuery is where it’s at. It was released in 2006 to make it easier to use CSS selectors to manipulate elements on the DOM.
+####14. DOM manipulation
+* jQuery is where it’s at. It was released in 2006 to make it easier to use CSS selectors to manipulate elements on the DOM.
 ```javascript
 // Change the color of the header to red
 $('h1').css({

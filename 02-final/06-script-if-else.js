@@ -6,3 +6,9 @@ if (number === 50) {
 } else {
   console.log('This code will NOT run');
 }
+
+if (number > 25) {
+  console.log('This code will run');
+} else {
+  console.log('This code will NOT run');
+}
