@@ -181,7 +181,7 @@ for (var num = 0; num < 10; num++) {
 ```
 
 ####For loops and objects
-* A very common and useful thing to do in Javascript is looop through data stored in objects. As you are looping through the data, you can 
+* A very common and useful thing to do in Javascript is looop through data stored in objects. As you are looping through the data, you can do things with it.
 ```javascript
 var array_object = [{
   "artist": "Prince",
