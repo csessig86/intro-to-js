@@ -1,4 +1,4 @@
-// For loops
+// FOR LOOP
 for (var num = 0; num < 10; num++) {
   // The first time through num equals 0.
   // The second time it equals 1, etc. until we get to 9.
@@ -6,6 +6,27 @@ for (var num = 0; num < 10; num++) {
   console.log(num);
 }
 
+// FOR LOOP AND ARRAY INSIDE OBJECT
+var array_object = [{
+  "artist": "Prince",
+  "album": "Sign o' the Times",
+  "stars": 5
+},{
+  "artist": "Funkadelic",
+  "album": "Cosmic Slop",
+  "stars": 5
+}]
+
+// array_object.length will equal two
+// Because we have two objects inside that array
+// This loop will therefore run twice
+for (var num = 0; num < array_object.length; num++) {
+  // This will first return Prince
+  // and then Funkadelic
+  console.log( array_object[num]['artist'] );
+}
+
+// FOR LOOP, FUNCTION AND VARIABLE
 var number = 50;
 
 function plusFive(num) {

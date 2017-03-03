@@ -193,10 +193,13 @@ var array_object = [{
   "stars": 5
 }]
 
+// array_object.length will equal two
+// Because we have two objects inside that array
+// This loop will therefore run twice
 for (var num = 0; num < array_object.length; num++) {
   // This will first return Prince
   // and then Funkadelic
-  array_length[num]['artist'];
+  array_object[num]['artist']
 }
 ```
 
