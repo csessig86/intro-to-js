@@ -101,7 +101,7 @@ object_one["album"] // returns "Sign o' the Times"
 object_one["stars"] // returns 5
 ```
 
-####6. Objects inside an array
+####Objects inside an array
 * You can also store objects inside arrays. You can store as many as you want.
 ```javascript
 var object_two = [{
@@ -118,7 +118,7 @@ object_two[0]["artist"] // returns "Prince"
 object_two[1]["artist"] // returns "Funkadelic"
 ```
 
-####7. If, else statement
+####6. If, else statement
 * This will run code based on a condition or conditions. Code that doesn't fit this condition or conditions will be ignored.
 ```javascript
 var number = 50;
@@ -130,7 +130,7 @@ if (number === 50) {
 }
 ```
 
-####8. Functions
+####7. Functions
 * You can also encapsulate code inside a function.
 ```javascript
 function ourFirst() {
@@ -149,7 +149,7 @@ function ourSecond() {
 ourSecond();
 ```
 
-####9. If, else statements and functions
+####If, else statements and functions
 * Like most things in Javascript, you can combine different parts. Below, we combine if, else statements and functions. Also, you can name your functions what you want but it's best to describe what is happening inside the function.
 ```javascript
 var number = 50;
@@ -169,7 +169,7 @@ if (number === 50) {
 }
 ```
 
-####10. For loops
+####8. For loops
 * If we want a piece a code to run many times, we can call a for loop.
 ```javascript
 for (var num = 0; num < 10; num++) {
@@ -216,7 +216,7 @@ for (var num = 0; num < 10; num++) {
 final_number // returns 95
 ```
 
-####12. Global v. local variables
+####9. Global v. local variables
 * Variables declared outside of a function are considered "global" and can be used anywhere in the file. Variables declared inside a function are considered "local" and can only be used inside the function.
 ```javascript
 // This is a global variable
@@ -233,7 +233,7 @@ number // This calls the global variable and it’s still 100.
 number = 500 // Now the global variable is set to 500
 ```
 
-####13. Returing functions
+####10. Returing functions
 * Sometimes it's easier if a function returns a value. This means every time you call that function, that value will be returned.
 ```javascript
 var number = 1005;
@@ -261,7 +261,7 @@ function commaSeparateNumber(val){
 commaSeparateNumber(1000000) // Returns 1,000,000
 ```
 
-####14. DOM manipulation
+####11. DOM manipulation
 * jQuery is where it’s at. It was released in 2006 to make it easier to use CSS selectors to manipulate elements on the DOM.
 ```javascript
 // Change the color of the header to red
