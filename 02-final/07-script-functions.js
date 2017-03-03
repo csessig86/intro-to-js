@@ -8,12 +8,13 @@ ourFirst(); // Calls the function
 
 var number = 100;
 
-function ourSecond() {
+function addFifty() {
   console.log(number); // returns 100
-  console.log(number + 50); // returns 150
+  number + 50 // Add 50 to our number variable
+  console.log(number); // returns 150
 }
 
-ourSecond(); // Calls the function
+addFifty(); // Calls the function
 
 // IF, ELSE STATEMENTS AND FUNCTIONS
 var number_two = 50;

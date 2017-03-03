@@ -8,7 +8,7 @@ var object_one = {
 console.log( object_one["artist"] ); // returns 'Prince'
 
 // OBJECTS INSIDE OF AN ARRAY
-var object_two = [{
+var array_object = [{
   "artist": "Prince",
   "album": "Sign o' the Times",
   "stars": 5
@@ -18,5 +18,5 @@ var object_two = [{
   "stars": 5
 }];
 
-console.log( object_two[0]["artist"] ); // returns "Prince"
-console.log( object_two[1]["artist"] ); // returns "Funkadelic"
+console.log( array_object[0]["artist"] ); // returns "Prince"
+console.log( array_object[1]["artist"] ); // returns "Funkadelic"

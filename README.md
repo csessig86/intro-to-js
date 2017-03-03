@@ -104,7 +104,7 @@ object_one["stars"] // returns 5
 ####Objects inside an array
 * You can also store objects inside arrays. You can store as many as you want.
 ```javascript
-var object_two = [{
+var array_object = [{
   "artist": "Prince",
   "album": "Sign o' the Times",
   "stars": 5
@@ -114,8 +114,8 @@ var object_two = [{
   "stars": 5
 }]
 
-object_two[0]["artist"] // returns "Prince"
-object_two[1]["artist"] // returns "Funkadelic"
+array_object[0]["artist"] // returns "Prince"
+array_object[1]["artist"] // returns "Funkadelic"
 ```
 
 ####6. If, else statement
@@ -141,15 +141,15 @@ ourFirst() // Calls the function
 
 var number_two = 100;
 
-function ourSecond() {
+function addFifty() {
   number_two // returns 100
   number_two + 50 // returns 150
 }
 
-ourSecond();
+addFifty();
 ```
 
-####If, else statements and functions
+####Functions and if, else statements
 * Like most things in Javascript, you can combine different parts. Below, we combine if, else statements and functions. Also, you can name your functions what you want but it's best to describe what is happening inside the function.
 ```javascript
 var number = 50;
@@ -180,7 +180,27 @@ for (var num = 0; num < 10; num++) {
 }
 ```
 
-####11. For loops, functions and variables
+####For loops and objects
+* A very common and useful thing to do in Javascript is looop through data stored in objects. As you are looping through the data, you can 
+```javascript
+var array_object = [{
+  "artist": "Prince",
+  "album": "Sign o' the Times",
+  "stars": 5
+},{
+  "artist": "Funkadelic",
+  "album": "Cosmic Slop",
+  "stars": 5
+}]
+
+for (var num = 0; num < array_object.length; num++) {
+  // This will first return Prince
+  // and then Funkadelic
+  array_length[num]['artist'];
+}
+```
+
+####For loops, functions and variables
 * We can also create a for loop to call a function every time it loops through. This looks like so:
 ```javascript
 var number = 50;
@@ -222,12 +242,12 @@ final_number // returns 95
 // This is a global variable
 var number = 100;
 
-function ourThird() {
+function ourSecond() {
   var number = 500 // Using var in front of number creates a local variable
   number // So this now returns 500
 }
 
-ourThird()
+ourSecond()
 
 number // This calls the global variable and it’s still 100.
 number = 500 // Now the global variable is set to 500
@@ -239,15 +259,15 @@ number = 500 // Now the global variable is set to 500
 var number = 1005;
 
 // Returns number variable minus that is passed as a parameter
-function ourFifth(minus_number) {
+function ourThird(minus_number) {
     return number - minus_number
 }
 
-ourFifth(1000) // returns 5
+ourThird(1000) // returns 5
 
 // Note: Without the return statement within the function
 // The following would error
-ourFifth(1000) + 100 // returns 105
+ourThird(1000) + 100 // returns 105
 
 // Add commas to numbers over 1000
 function commaSeparateNumber(val){
